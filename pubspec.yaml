@@ -31,7 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.3.2
+  gsheets: ^0.4.2
+  image_picker: ^0.8.5
   intl: ^0.17.0
+  syncfusion_flutter_datepicker: ^20.1.51
 
 dev_dependencies:
   flutter_lints: ^1.0.0

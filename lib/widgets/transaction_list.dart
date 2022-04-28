@@ -6,7 +6,8 @@ class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
   final Function deleteTx;
 
-  TransactionList(this.transactions, this.deleteTx);
+  const TransactionList(this.transactions, this.deleteTx, {Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,14 +16,14 @@ class TransactionList extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
-                height: MediaQuery.of(context).size.height*0.1,
+                height: MediaQuery.of(context).size.height * 0.1,
               ),
               Text(
                 'No Transactions Yet!',
                 style: Theme.of(context).textTheme.headline6,
               ),
               const SizedBox(height: 10),
-              Container(
+              SizedBox(
                 height: 200,
                 child: Image.asset(
                   'assets/images/waiting.jpg',
